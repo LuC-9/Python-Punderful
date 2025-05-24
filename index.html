@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Punderful: A Slithering Journey from Zero to Mastery</title>
+    <style>
+        :root {
+            --primary-color: #1a5653;
+            --secondary-color: #8cc084;
+            --accent-color: #f0f4c3;
+            --text-color: #333;
+            --light-text: #f5f5f5;
+            --background-color: #f9f9f9;
+            --card-background: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .book-cover {
+            max-width: 300px;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 10px 20px var(--shadow-color);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        
+        .author {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--light-text);
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin: 0.5rem;
+        }
+        
+        .cta-button:hover {
+            background-color: #7ab072;
+        }
+        
+        .main-content {
+            padding: 3rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+        
+        .book-description {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        
+        .chapters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .chapter-card {
+            background-color: var(--card-background);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px var(--shadow-color);
+        }
+        
+        .chapter-image {
+            height: 180px;
+            overflow: hidden;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .chapter-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .chapter-content {
+            padding: 1.5rem;
+        }
+        
+        .chapter-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        .chapter-description {
+            font-size: 0.95rem;
+            color: #666;
+        }
+        
+        .features {
+            background-color: var(--accent-color);
+            padding: 3rem 0;
+        }
+        
+        .features-list {
+            max-width: 800px;
+            margin: 0 auto;
+            list-style-type: none;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .feature-text {
+            flex: 1;
+        }
+        
+        .feature-title {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-text {
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .book-cover {
+                max-width: 200px;
+            }
+            
+            .chapters-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="images/book_cover.png" alt="Python Punderful Book Cover" class="book-cover">
+                <h1>Python Punderful</h1>
+                <p class="subtitle">A Slithering Journey from Zero to Mastery</p>
+                <p class="author">By Aarsh Mishra (LuC)</p>
+                <div>
+                    <a href="python_punderful_sample.pdf" class="cta-button" download>Download Sample</a>
+                    <a href="#chapters" class="cta-button">Explore Chapters</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="container">
+            <h2 class="section-title">About This Book</h2>
+            <p class="book-description">
+                Welcome to Python Punderful! Get ready to embark on a fun, engaging, and slightly silly journey into the world of Python programming. 
+                We'll slither through the basics, wrap our heads around complex concepts, and hopefully have a few laughs along the way. 
+                No prior coding experience? No problem! This book is designed for absolute beginners, using puns, jokes, analogies, 
+                and plenty of pictures to make learning Python as painless (and punderful) as possible.
+            </p>
+            
+            <h2 class="section-title" id="chapters">Book Chapters</h2>
+            <div class="chapters-grid">
+                <div class="chapter-card">
+                    <div class="chapter-image">
+                        <img src="images/python_mascot.png" alt="Python Mascot">
+                    </div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Chapter 1: Why Python? Because It's SSSSensational!</h3>
+                        <p class="chapter-description">An introduction to Python, its history, philosophy, and why it's a great language to learn.</p>
+                    </div>
+                </div>
+                
+                <div class="chapter-card">
+                    <div class="chapter-image">
+                        <img src="images/python_variables.png" alt="Python Variables">
+                    </div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Chapter 2: Getting a Grip on Python Basics</h3>
+                        <p class="chapter-description">Learn about variables, data types, and basic operations in Python.</p>
+                    </div>
+                </div>
+                
+                <div class="chapter-card">
+                    <div class="chapter-image">
+                        <img src="images/hello_world.png" alt="Control Flow">
+                    </div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Chapter 3: Shedding Light on Control Flow</h3>
+                        <p class="chapter-description">Master if statements, loops, and logical operators to control your program's flow.</p>
+                    </div>
+                </div>
+                
+                <div class="chapter-card">
+                    <div class="chapter-image">
+                        <img src="images/python_collections.png" alt="Python Collections">
+                    </div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Chapter 4: Pythons Love Collections</h3>
+                        <p class="chapter-description">Explore Python's data structures: lists, tuples, dictionaries, and sets.</p>
+                    </div>
+                </div>
+                
+                <div class="chapter-card">
+                    <div class="chapter-image">
+                        <img src="images/python_functions.png" alt="Python Functions">
+                    </div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Chapter 5: Function Junction</h3>
+                        <p class="chapter-description">Learn how to define and use functions to organize and reuse your code.</p>
+                    </div>
+                </div>
+                
+                <div class="chapter-card">
+                    <div class="chapter-image">
+                        <img src="images/python_oop.png" alt="Python OOP">
+                    </div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Chapter 6: Object-Oriented Python</h3>
+                        <p class="chapter-description">Understand object-oriented programming concepts and how to implement them in Python.</p>
+                    </div>
+                </div>
+                
+                <div class="chapter-card">
+                    <div class="chapter-image">
+                        <img src="images/python_modules.png" alt="Python Modules">
+                    </div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Chapter 7: Importing Wisdom: Modules and Packages</h3>
+                        <p class="chapter-description">Learn how to use Python's module system to organize and reuse code across projects.</p>
+                    </div>
+                </div>
+                
+                <div class="chapter-card">
+                    <div class="chapter-image">
+                        <img src="images/python_files.png" alt="Python Files">
+                    </div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Chapter 8: File Handling</h3>
+                        <p class="chapter-description">Master reading from and writing to files in various formats.</p>
+                    </div>
+                </div>
+                
+                <div class="chapter-card">
+                    <div class="chapter-image">
+                        <img src="images/python_debugging.png" alt="Python Debugging">
+                    </div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Chapter 9: Debugging and Error Handling</h3>
+                        <p class="chapter-description">Learn how to handle errors gracefully and debug your Python programs effectively.</p>
+                    </div>
+                </div>
+                
+                <div class="chapter-card">
+                    <div class="chapter-image">
+                        <img src="images/python_testing.png" alt="Python Testing">
+                    </div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Chapter 10: Testing Your Python</h3>
+                        <p class="chapter-description">Discover how to write tests to verify your code works correctly.</p>
+                    </div>
+                </div>
+                
+                <div class="chapter-card">
+                    <div class="chapter-image">
+                        <img src="images/python_web_development.png" alt="Python Web Development">
+                    </div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Chapter 11: Web Development</h3>
+                        <p class="chapter-description">Learn how to build web applications and APIs with Python.</p>
+                    </div>
+                </div>
+                
+                <div class="chapter-card">
+                    <div class="chapter-image">
+                        <img src="images/python_data_science.png" alt="Python Data Science">
+                    </div>
+                    <div class="chapter-content">
+                        <h3 class="chapter-title">Chapter 12: Data Science and Machine Learning</h3>
+                        <p class="chapter-description">Explore how Python is used for data analysis, visualization, and machine learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">What Makes This Book Special</h2>
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <div class="feature-icon">🐍</div>
+                        <div class="feature-text">
+                            <h3 class="feature-title">Snake-themed Humor Throughout</h3>
+                            <p>Learning is more fun with puns! We use snake-themed humor to keep you engaged and smiling.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">🔍</div>
+                        <div class="feature-text">
+                            <h3 class="feature-title">Beginner-Friendly Explanations</h3>
+                            <p>Complex concepts are broken down into simple, digestible pieces that anyone can understand.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">🎨</div>
+                        <div class="feature-text">
+                            <h3 class="feature-title">Custom Illustrations</h3>
+                            <p>Visual learners rejoice! Each chapter includes custom illustrations to help visualize key concepts.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">💻</div>
+                        <div class="feature-text">
+                            <h3 class="feature-title">Practical Code Examples</h3>
+                            <p>Learn by doing with hands-on code examples that you can try yourself.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">🧩</div>
+                        <div class="feature-text">
+                            <h3 class="feature-title">Exercises and Challenges</h3>
+                            <p>"Try It Yourself" exercises and "Python Puzzler" challenges to test your knowledge.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon">💡</div>
+                        <div class="feature-text">
+                            <h3 class="feature-title">"Snake Byte" Fun Facts</h3>
+                            <p>Interesting tidbits and fun facts about Python to keep learning entertaining.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p class="footer-text">Python Punderful: A Slithering Journey from Zero to Mastery</p>
+            <p class="footer-text">© 2025 Aarsh Mishra (LuC) - All rights reserved</p>
+            <a href="https://buymeacoffee.com/LuC9/e/413888" class="cta-button" download>Get Full Book (PDF)</a>
+        </div>
+    </footer>
+</body>
+</html>
