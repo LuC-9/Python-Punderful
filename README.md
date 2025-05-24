@@ -1,1 +1,1 @@
-[Some title here](python_punderful_sample.pdf)
+[Sample](python_punderful_sample.pdf)
