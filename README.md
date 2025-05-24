@@ -9,18 +9,52 @@ Welcome! This repo contains **sample chapters** from my upcoming book:
 
 This sample includes:
 - ✅ Introduction
-- ✅ Variables and Data Types
-- ✅ Control Flow
-- ✅ Functions
+- ✅ etting a Grip on Python Basics
+- ✅ Shedding Light on Control Flow
 
 ---
 
 ## 🔓 Want the Full Book?
 
-The full book covers:
-- Advanced Python (OOP, file handling, modules)
-- Projects (CLI apps, automation scripts, APIs)
-- Clean code tips, common pitfalls, and more
+This book covers everything from Python fundamentals to web development and machine learning — with humor, clarity, and zero fluff.
+
+### 📚 Full Chapter List
+
+1. **Why Python? Because It's SSSSensational!**  
+   _An intro to Python's history, philosophy, and why it's worth learning._
+
+2. **Getting a Grip on Python Basics**  
+   _Variables, data types, and basic operations._
+
+3. **Shedding Light on Control Flow**  
+   _If statements, loops, and logical operators._
+
+4. **Pythons Love Collections**  
+   _Lists, tuples, dictionaries, and sets._
+
+5. **Function Junction**  
+   _Defining and using functions like a pro._
+
+6. **Object-Oriented Python**  
+   _Classes, objects, inheritance, and encapsulation._
+
+7. **Importing Wisdom: Modules and Packages**  
+   _Organizing code with modules and packages._
+
+8. **File Handling**  
+   _Reading from and writing to files._
+
+9. **Debugging and Error Handling**  
+   _Catching bugs and fixing them like a detective._
+
+10. **Testing Your Python**  
+    _Writing tests to ensure your code is solid._
+
+11. **Web Development**  
+    _Build web apps and APIs using Python._
+
+12. **Data Science and Machine Learning**  
+    _Data analysis, visualization, and ML basics._
 
 ### 👉 Get full access by becoming a [GitHub Sponsor](https://github.com/sponsors/yourusername)!
 
