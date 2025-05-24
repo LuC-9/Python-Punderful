@@ -44,9 +44,9 @@ Your support helps me:
 
 ## 🚀 Let’s Connect
 
-- 🔗 GitHub: [@yourusername](https://github.com/yourusername)
-- 📫 Twitter / LinkedIn / Blog (optional)
-- ☕ Support: [GitHub Sponsors](https://github.com/sponsors/yourusername)
+- 🔗 GitHub: [@yourusername](https://github.com/LuC-9)
+- 📫 byluc.in
+- ☕ Support: [GitHub Sponsors](https://github.com/sponsors/LuC-9)
 
 ---
 
