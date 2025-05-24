@@ -56,7 +56,7 @@ This book covers everything from Python fundamentals to web development and mach
 12. **Data Science and Machine Learning**  
     _Data analysis, visualization, and ML basics._
 
-### 👉 Get full access by becoming a [GitHub Sponsor](https://github.com/sponsors/yourusername)!
+### 👉 Get full access by becoming a [GitHub Sponsor](https://github.com/sponsors/LuC-9)!
 
 As a sponsor, you'll:
 - 📘 Get access to the **complete book (PDF)**
