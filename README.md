@@ -1,7 +1,7 @@
-# 📘 Learn Python by Doing – Sample Chapters
+# 📘 Python Punderful – Sample Chapters
 
 Welcome! This repo contains **sample chapters** from my upcoming book:  
-**“Learn Python by Doing”** — a hands-on guide to mastering Python with real-world examples.
+**“Python Punderful”** — a hands-on guide to mastering Python with real-world examples.
 
 ---
 
