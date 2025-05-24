@@ -9,7 +9,7 @@ Welcome! This repo contains **sample chapters** from my upcoming book:
 
 This sample includes:
 - ✅ Introduction
-- ✅ etting a Grip on Python Basics
+- ✅ Getting a Grip on Python Basics
 - ✅ Shedding Light on Control Flow
 
 ---
