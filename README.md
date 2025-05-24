@@ -13,8 +13,6 @@ This sample includes:
 - ✅ Control Flow
 - ✅ Functions
 
-📁 Check the `chapters/` folder to read sample content.
-
 ---
 
 ## 🔓 Want the Full Book?
