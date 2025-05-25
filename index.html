@@ -462,50 +462,10 @@
         </div>
     </footer>
     
-    <!-- Vercel Analytics -->
+    <!-- Vercel Web Analytics -->
     <script>
       window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
-    
-    <!-- Custom Analytics Tracking -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Track all links
-        const links = document.querySelectorAll('a');
-        links.forEach(link => {
-          link.addEventListener('click', function(e) {
-            // Get link text or href for tracking
-            const linkText = this.textContent.trim();
-            const linkHref = this.getAttribute('href');
-            const linkType = this.classList.contains('cta-button') ? 'CTA Button' : 'Link';
-            
-            // Track the event
-            window.va('event', {
-              name: 'click',
-              data: {
-                element: linkType,
-                text: linkText,
-                destination: linkHref
-              }
-            });
-          });
-        });
-        
-        // Track chapter card interactions
-        const chapterCards = document.querySelectorAll('.chapter-card');
-        chapterCards.forEach(card => {
-          card.addEventListener('click', function() {
-            const chapterTitle = this.querySelector('.chapter-title').textContent.trim();
-            window.va('event', {
-              name: 'chapter_view',
-              data: {
-                chapter: chapterTitle
-              }
-            });
-          });
-        });
-      });
-    </script>
 </body>
 </html>
