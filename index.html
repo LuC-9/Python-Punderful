@@ -467,5 +467,54 @@
       window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
+    
+    <!-- Custom Vercel Analytics Event Tracking -->
+    <script>
+      // Wait for Vercel Analytics to load
+      const checkVA = setInterval(function() {
+        if (typeof window.va === 'function') {
+          clearInterval(checkVA);
+          setupTracking();
+        }
+      }, 100);
+      
+      function setupTracking() {
+        // Track all links and downloads
+        const links = document.querySelectorAll('a');
+        links.forEach(link => {
+          link.addEventListener('click', function(e) {
+            const linkText = this.textContent.trim();
+            const linkHref = this.getAttribute('href');
+            const isDownload = this.hasAttribute('download') || linkHref.endsWith('.pdf');
+            const linkType = this.classList.contains('cta-button') ? 'CTA Button' : 'Link';
+            
+            // Track with Vercel Analytics
+            window.va('event', {
+              name: isDownload ? 'download' : 'click',
+              data: {
+                element: linkType,
+                text: linkText,
+                url: linkHref
+              }
+            });
+          });
+        });
+        
+        // Track chapter card interactions
+        const chapterCards = document.querySelectorAll('.chapter-card');
+        chapterCards.forEach(card => {
+          card.addEventListener('click', function() {
+            const chapterTitle = this.querySelector('.chapter-title').textContent.trim();
+            
+            window.va('event', {
+              name: 'chapter_view',
+              data: {
+                chapter: chapterTitle
+              }
+            });
+          });
+        });
+      }
+    </script>
 </body>
 </html>
